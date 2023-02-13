@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login1.css">
+   <script src="login2.js"></script>
+  </head>
+  
+  <body>
+    
+    <main id="main-holder">
+      <h1 id="login-header">Login</h1>
+      <img src="login.png">
+      
+      <div id="login-error-msg-holder">
+        <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+      </div>
+      <form action="login3.php" id="login-form" method="GET" >
+        <input type="email" name="username" id="username-field" class="login-form-field" placeholder="Email">
+        <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+        <input onclick="return login()" type="submit" href="login3.php" value="Login"  >
+      </form>
+      </main>
+  </body>
+  
+  </html>
